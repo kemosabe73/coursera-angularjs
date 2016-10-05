@@ -20,7 +20,7 @@ function LunchCheckController($scope){
     }
     else
     {
-        var arr = String.split($scope.lunch, ",").length;
+        var arr = $scope.lunch.split(",").length;
         $scope.message = arr <= 3 ? "Enjoy!" : "Too much!";
         $scope.alert   = "alert alert-success";
     }
